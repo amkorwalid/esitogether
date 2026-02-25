@@ -77,14 +77,13 @@ function TiltCard({ s, index }: { s: typeof sections[0]; index: number }) {
       ref={ref}
       onMouseMove={handleMouse}
       onMouseLeave={handleLeave}
-      style={{ rotateX, rotateY, transformStyle: "preserve-3d", perspective: 800 }}
+      style={{ rotateX, rotateY, transformStyle: "preserve-3d", perspective: 800, background: "#122E63", border: "1px solid #1C4D8D" }}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
       whileHover={{ scale: 1.04 }}
       className="relative rounded-xl p-6 cursor-pointer group"
-      style={{ background: "#122E63", border: "1px solid #1C4D8D" }}
     >
       {/* glow on hover */}
       <motion.div
@@ -157,8 +156,8 @@ function Typewriter({ text, className }: { text: string; className?: string }) {
 /* ─── Stats bar ─── */
 const stats = [
   { label: "Étudiants", value: 3000, suffix: "+" },
-  { label: "Ressources", value: 120, suffix: "+" },
-  { label: "Clubs actifs", value: 15, suffix: "" },
+  { label: "Ressources", value: 50, suffix: "+" },
+  { label: "Clubs actifs", value: 5, suffix: "" },
   { label: "Sections", value: 6, suffix: "" },
 ];
 
