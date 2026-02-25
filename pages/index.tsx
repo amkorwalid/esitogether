@@ -20,7 +20,7 @@ export default function Home() {
 
       <div className="min-h-screen" style={{ background: "#0F2854" }}>
         {/* Navbar */}
-        <nav className="flex items-center justify-between px-8 py-5" style={{ borderBottom: "1px solid #1C4D8D" }}>
+        <nav className="flex items-center justify-between px-4 sm:px-8 py-4 sm:py-5" style={{ borderBottom: "1px solid #1C4D8D" }}>
           <div className="flex items-center gap-2">
             <span className="text-2xl font-bold text-white">ESI</span>
             <span className="text-2xl font-bold" style={{ color: "#BDE8F5" }}>Together</span>
@@ -35,14 +35,14 @@ export default function Home() {
         </nav>
 
         {/* Hero */}
-        <section className="flex flex-col items-center justify-center text-center px-6 pt-24 pb-20">
+        <section className="flex flex-col items-center justify-center text-center px-4 sm:px-6 pt-12 sm:pt-24 pb-12 sm:pb-20">
           <div
             className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold mb-6"
             style={{ background: "#122E63", color: "#BDE8F5", border: "1px solid #1C4D8D" }}
           >
             École des Sciences de l&apos;Information · Rabat
           </div>
-          <h1 className="text-5xl font-extrabold text-white mb-6 leading-tight max-w-3xl">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-6 leading-tight max-w-3xl">
             Tout ce dont vous avez besoin,{" "}
             <span style={{ color: "#4988C4" }}>en un seul endroit</span>
           </h1>
@@ -69,7 +69,7 @@ export default function Home() {
         </section>
 
         {/* Sections grid */}
-        <section className="px-8 pb-20 max-w-6xl mx-auto">
+        <section className="px-4 sm:px-8 pb-12 sm:pb-20 max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold text-white text-center mb-10">
             Ce que vous trouverez sur ESI Together
           </h2>

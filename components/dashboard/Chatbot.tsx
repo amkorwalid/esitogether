@@ -56,7 +56,7 @@ export default function Chatbot() {
   }
 
   return (
-    <div className="flex flex-col h-full" style={{ maxHeight: "calc(100vh - 80px)" }}>
+    <div className="flex flex-col" style={{ minHeight: "60vh", maxHeight: "calc(100dvh - 200px)" }}>
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-white">🤖 Chatbot ESI</h2>
         <p className="text-sm mt-1" style={{ color: "#7FAFD4" }}>
