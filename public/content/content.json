@@ -1,0 +1,376 @@
+{
+  "sections": {
+    "logement": {
+      "title": "Logement & Résidences",
+      "icon": "🏠",
+      "subsections": {
+        "residences-universitaires": {
+          "title": "Résidences Universitaires",
+          "content": [
+            {
+                "title": "Bayt Al Maârifa Rabat (BAM)",
+                "description": "Bayt Al Maârifa Rabat se positionne stratégiquement en plein cœur du quartier universitaire Al Irfane.",
+                "details": ["Chambres individuelles ou doubles", "Wi-Fi", "Sécurité et télésurveillance 24H/24"],
+                "lien": "https://baytalmaarifa.ma/bayt-al-maarifa-rabat/",
+                "localisation": "https://maps.app.goo.gl/Gz3AYsZYT4SYXwg96",
+                "prix": "1300 - 1800 DH/mois",
+                "contact": "+212 537 68 60 25"
+            },
+            {
+                "title": "Cité Universitaire Fondation Hassan II Rabat",
+                "description": "Gérée par la Fondation Hassan II pour les œuvres sociales du ministère de l’Intérieur, cette résidence offre un cadre moderne et sécurisé aux étudiants du ministère.",
+                "details": ["Studios meublés", "Wi-Fi haut débit", "Sécurité 24h/24", "Salles d’étude", "Service de ménage"],
+                "lien": "https://fondationh2.ma",
+                "localisation": "https://maps.app.goo.gl/vdiPCfY1jdsYSA8FA",
+                "prix": "800DH - 1200DH/mois",
+                "contact": "+212 537 27 97 90 "
+            }
+          ]
+        },
+        "cites-universitaires": {
+          "title": "Cités Universitaires",
+          "content": [
+            {
+                "title": "Cité Universitaire Souissi I Rabat",
+                "description": "Située dans le quartier Souissi à Rabat, cette cité universitaire publique accueille les étudiants marocains inscrits dans les établissements supérieurs de la capitale.",
+                "details": ["Chambres partagées", "Accès Wi-Fi", "Sécurité assurée", "Proximité des facultés"],
+                "lien": "https://www.onousc.ma/se-loger-dans-une-cite-universitaire",
+                "localisation": "https://maps.app.goo.gl/6YwYkZJvZzZzJrQe6",
+                "prix": "500DH/ année académique",
+                "contact": "+212 537 77 21 95"
+            }
+
+          ]
+        }
+      }
+    },
+    "transport": {
+      "title": "Transport & Mobilité",
+      "icon": "🚌",
+      "subsections": {
+        "bus": {
+          "title": "Bus",
+          "content": [
+            {
+                "title": "Bus Alsa",
+                "description": "Bénéficiez de carte étudiant pour des voyages illimités.",
+                "Lignes direct": ["L06", "L30"],
+                "arrets": ["Rabat Ville", "Salé", "Témara", "Skhirat"],
+                "prix": "Carte étudiant 150DH/mois",
+                "lien": "https://www.alsa.ma/rabat/espace-etudiant"
+            }
+          ]
+        },
+        "tramway": {
+          "title": "Tramway",
+          "content": [
+            {
+                "title": "Tramway",
+                "description": "Bénéficiez de carte étudiant pour des voyages illimités.",
+                "Lignes direct": ["L1"],
+                "arrets": ["Rabat Ville", "Salé"],
+                "prix": "Carte étudiant 160DH/mois",
+                "lien": "https://www.tram-way.ma/fr/abonnement/"
+            }
+          ]
+        }
+      }
+    },
+    "ressources-academiques": {
+      "title": "Ressources Académiques",
+      "icon": "📚",
+      "subsections": {
+        "resources": {
+          "title": "Ressources du Cours",
+          "content": [
+            {
+              "filiere": "ICSD",
+              "description": "Ingénierie des Contenus, des Systèmes et du Digital",
+              "semestres": [
+                {"semestre": "S1", "lien": "https://drive.google.com/drive/folders/1s6WzmSmZupyTijVJXxNJ2evNexHmldBE"},
+                {"semestre": "S2", "lien": "https://drive.google.com/drive/folders/1TkcKIJuG4mnC7v-Xj2XSHLtfABXpEs6j"},
+                {"semestre": "S3", "lien": "https://drive.google.com/drive/folders/1gTFkn1POwgFOWeLyEa6wqY4IxCOYEVmE"},
+                {"semestre": "S4", "lien": "https://drive.google.com/drive/folders/122BL0x6QllGCk92Cq5Mnib3kYgYg2R3l"},
+                {"semestre": "S5", "lien": "https://drive.google.com/drive/folders/1c0jMGlwn-9-_v4jQK9dinR5nT5F-8rkQ"}
+              ]
+            },
+            {
+              "filiere": "ISSIC",
+              "description": "Ingénierie des Systèmes et Services Informatiques Communicants",
+              "semestres": [
+                {"semestre": "S1", "lien": "https://drive.google.com/drive/folders/1qFXZPEVXIKbER_0aRXz8v_bsrr2UZqQ-"},
+                {"semestre": "S2", "lien": "https://drive.google.com/drive/folders/15gn__tOlxPRHbLdLVU-jS5B7yxw0SS7F"},
+                {"semestre": "S3", "lien": "https://drive.google.com/drive/folders/1VaJJBNPK66IGq9hHrsFESGft_fQ0twUF"},
+                {"semestre": "S4", "lien": "https://drive.google.com/drive/folders/16tvltamZoOuKuFHPPyMSq_VDiXkpBvzC"},
+                {"semestre": "S5", "lien": "https://drive.google.com/drive/folders/16gm1w3qYYWNmAQ1Kkl955fhBta_BDdjm"}
+              ]
+            },
+            {
+              "filiere": "ISITD",
+              "description": "Ingénierie des Systèmes d'Information et du Traitement des Données",
+              "semestres": [
+                {"semestre": "S1", "lien": "https://drive.google.com/drive/folders/1Z6rM5CBs_etFk5b3AyancgFVt_x0r0oN"},
+                {"semestre": "S2", "lien": "https://drive.google.com/drive/folders/16-Ac1yx-KBajKMeBfNjzgofdfQge3hM6"},
+                {"semestre": "S3", "lien": "https://drive.google.com/drive/folders/1gIAvUKHR-yoauqHUZDJNXGEOHirEcldZ"},
+                {"semestre": "S4", "lien": "https://drive.google.com/drive/folders/1p4lo9cpbIH1chuCyK2mufnsa7d34oaF8"},
+                {"semestre": "S5", "lien": "https://drive.google.com/drive/folders/1gWdRBG5M52R_e23-C-Ibpn7kdKzIDqWF"}
+              ]
+            },
+            {
+              "filiere": "INN",
+              "description": "Innovation et Nouvelles Technologies",
+              "semestres": [
+                {"semestre": "S1", "lien": "https://drive.google.com/drive/folders/1Z6rM5CBs_etFk5b3AyancgFVt_x0r0oN"},
+                {"semestre": "S2", "lien": "https://drive.google.com/drive/folders/16-Ac1yx-KBajKMeBfNjzgofdfQge3hM6"},
+                {"semestre": "S3", "lien": "https://drive.google.com/drive/folders/1D43HzgMLvWOYYgbOQ5d5r3ntnix6FGEW"},
+                {"semestre": "S4", "lien": "https://drive.google.com/drive/folders/16126Y86_nLcMBHNvi2iVv60OLjuUk43_"},
+                {"semestre": "S5", "lien": "https://drive.google.com/drive/folders/1Dxx8ARjbQsBlYCoYkuOGatnWZDUbe-6e"}
+              ]
+            },
+            {
+              "filiere": "RAPPORTS DE STAGE",
+              "description": "Rapports de stage des différentes années",
+              "semestres": [
+                {"semestre": "1ère Année", "lien": "https://drive.google.com/drive/folders/1OnWDD5FV2OGqxzdqoz_FyrYoodHCURS5"},
+                {"semestre": "2ème Année", "lien": "https://drive.google.com/drive/folders/1TdFN-u4TSvsXHv_h61jdBrQNWfl49VbV"},
+                {"semestre": "3ème Année", "lien": "https://drive.google.com/drive/folders/1dMUbnD1XoS9MmpUB3dlEmc22xFvA9feS"}
+              ]
+            }
+          ]
+        },
+        "autoformation": {
+          "title": "Autoformation",
+          "content": [
+            {
+              "domaine": "Data Analyst",
+              "description": "Maitrizer les compétences essentielles pour analyser et interpréter des données afin de soutenir la prise de décision en entreprise.",
+              "roadmapImage": "/roadmaps/data-analyst.jpg",
+              "downloadLink": "/roadmaps/data-analyst.pdf",
+              "niveau": "Débutant à Avancé",
+              "duree": "6-12 mois",
+              "technologies": ["Excel", "SQL", "Python", "Tableau", "Power BI"]
+            },
+            {
+              "domaine": "Software Architect",
+              "description": "Maîtriser les compétences clés pour concevoir, structurer et optimiser des architectures logicielles robustes afin de garantir la performance, la sécurité et l’évolutivité des systèmes informatiques.",
+              "roadmapImage": "/roadmaps/Software-Architect.jpg",
+              "downloadLink": "/roadmaps/Software-Architect.pdf",
+              "niveau": "Débutant à Avancé",
+              "duree": "6-12 mois",
+              "technologies": ["UML", "SysML", "AWS", "Azure", "GCP", "Docker", "Kubernetes", "TOGAF"]
+            },
+            {
+              "domaine": "Data Engineer",
+              "description": "Maîtriser les compétences essentielles pour concevoir, gérer et optimiser des pipelines de données fiables afin de garantir la qualité, la disponibilité et l’efficacité des informations utilisées par l’entreprise.",
+              "roadmapImage": "/roadmaps/Data-Engineer.jpg",
+              "downloadLink": "/roadmaps/Data-Engineer.pdf",
+              "niveau": "Débutant à Avancé",
+              "duree": "6-12 mois",
+              "technologies": ["SQL", "NoSQL", "Hadoop", "Spark", "Airflow", "Talend", "Python", "Scala", "BigQuery", "Redshift"]
+            },
+            {
+              "domaine": "Full Stack Developer",
+              "description": "Maîtriser les compétences clés pour développer et intégrer des applications complètes, du front-end au back-end, afin d’assurer une expérience utilisateur fluide et des systèmes performants.",
+              "roadmapImage": "/roadmaps/Full-Stack-Developer.jpg",
+              "downloadLink": "/roadmaps/Full-Stack-Developer.pdf",
+              "niveau": "Débutant à Avancé",
+              "duree": "6-12 mois",
+              "technologies": ["HTML", "CSS", "JavaScript", "React", "Angular", "Vue.js", "Node.js", "Django", "Spring Boot", "MySQL", "PostgreSQL", "MongoDB", "Git", "Docker"]
+            },
+            {
+              "domaine": "AI Engineer",
+              "description": "Maîtriser les compétences fondamentales pour concevoir, entraîner et déployer des modèles d’intelligence artificielle afin de transformer les données en solutions innovantes et automatisées.",
+              "roadmapImage": "/roadmaps/AI-Engineer.jpg",
+              "downloadLink": "/roadmaps/AI-Engineer.pdf",
+              "niveau": "Débutant à Avancé",
+              "duree": "6-12 mois",
+              "technologies": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Azure ML", "AWS SageMaker", "Google AI Platform", "spaCy", "OpenCV"]
+            },
+            {
+              "domaine": "Cyber Security Expert",
+              "description": "Maîtriser les compétences indispensables pour protéger les systèmes et les données contre les menaces numériques, en assurant la confidentialité, l’intégrité et la résilience des infrastructures informatiques.",
+              "roadmapImage": "/roadmaps/Cyber-Security-Expert.jpg",
+              "downloadLink": "/roadmaps/Cyber-Security-Expert.pdf",
+              "niveau": "Débutant à Avancé",
+              "duree": "6-12 mois",
+              "technologies": ["Wireshark", "Snort", "Splunk", "ELK Stack", "Metasploit", "Burp Suite", "Nmap", "IAM", "Zero Trust", "Firewalls", "Cryptography"]
+            }
+          ]
+        }
+      }
+    },
+    "vie-etudiante": {
+      "title": "Vie Étudiante",
+      "icon": "🎉",
+      "subsections": {
+        "Associations": {
+          "title": "Associations",
+          "content": [
+            {
+              "title": "CODE",
+              "description": "Club Of Data Engineers, fondly known as CODE, is the go-to IT club at the School of Information Sciences (ESI) in Rabat.",
+              "details": ["Tech Mastery", "Hackathons", "Conférences", "Projets collaboratifs"],
+              "Cellules": ["Data & AI", "Competitive Programming", "Cyber Security"],
+              "instagram": "https://www.instagram.com/code.esi/",
+              "official_website": "https://club-code.esi.ma/",
+              "official_mail": "code@esi.ac.ma"
+            },
+            {
+              "title": "JLM",
+              "description": "JLM is a 100% Moroccan non-profit initiative with an international dimension, working towards socio-economic and sustainable development.",
+              "details": [
+                "Développer un réseau professionnel",
+                "Promouvoir le développement socio-économique et durable",
+                "Organiser des conférences",
+                "Encourager le bénévolat et l'engagement social"
+              ],
+              "Cellules": ["Organisation", "Présentation", "media", "Sponsoring"],
+              "instagram": "https://www.instagram.com/jlm_esi",
+              "official_mail": "jlm.esi@esi.ac.ma"
+            },
+            {
+              "title": "JCMP",
+              "description": "JCMP ESI est un club social à but non lucratif de l’École des Sciences de l’Information, fondé en 2014 et dédié au développement personnel et à l'épanouissement de la vie parascolaire.",
+              "details": [
+                "Développement personnel des élèves-ingénieurs",
+                "Organisation d’activités parascolaires",
+                "Renforcement de la cohésion et de la vie estudiantine",
+                "Implication dans des initiatives sociales et communautaires"
+              ],
+              "Cellules": ["Organisation", "Communication", "Événementiel", "Médias"],
+              "instagram": "https://www.instagram.com/jcmp_esi",
+              "official_mail": "jcmp.esi@esi.ac.ma"
+            },
+            {
+              "title": "ESI TV",
+              "description": "ESI TV est le club média de l’École des Sciences de l’Information (ESI) à Rabat, qui produit des contenus audiovisuels sur la vie étudiante, l’IA, la cybersécurité, et les interviews d’ingénieurs.",
+              "details": [
+                "Production de vidéos et podcasts",
+                "Couverture des événements de l’école (PFE, soutenances…)", 
+                "Interviews d’experts (professeurs, Alumni…)", 
+                "Sensibilisation à l’IA et la cybersécurité"
+              ],
+              "Cellules": [
+                "Réalisation", 
+                "Interview / Journalisme", 
+                "Technique (vidéo / audio)", 
+                "Communication / Social Media"
+              ],
+              "instagram": "https://www.instagram.com/esi__tv/",
+              "official_mail": "esitv@esi.ac.ma"
+            }
+          ]
+        },
+        "evenements": {
+          "title": "Événements",
+          "content": [
+            {
+              "title": "Journée d'Intégration",
+              "description": "Événement annuel pour accueillir les nouveaux étudiants.",
+              "details": ["Activités sportives", "Ateliers", "Rencontres", "Animations"],
+              "date": "15 Septembre 2024",
+              "lieu": "Campus Principal",
+              "lien": "http://www.esi.ac.ma/jlm-esi-concert-caritatif/"
+            },
+            {
+              "title": "Participation de l’ESI au PMI® MENA Leadership Institute Meeting 2025",
+              "description": "C’est avec un immense plaisir que nous annonçons la participation de l’ESI au PMI® MENA Leadership Institute Meeting (3–5 octobre 2025 à Zallaq, Bahreïn). Notre institution a été représentée par Mlle Noura ED DAHBY, Présidente du Club CODE–ESI et Fondatrice et Présidente du premier PMI Student Club du Maroc.",
+              "details": [
+                "Participation internationale",
+                "Représentation institutionnelle",
+                "Leadership étudiant",
+                "Collaboration avec le PMI Morocco Chapter"
+              ],
+              "date": "8 Octobre 2025",
+              "lieu": "ESI",
+              "lien": " "
+            },
+            {
+              "titre": "Moroccan Days of Future Data Scientists (MDFDS) – 2025",
+              "description": "Deuxième édition de MDFDS : ateliers et conférences pour explorer la Data Science et l’IA, avec un focus sur la digitalisation du secteur de la santé.",
+              "programme": [
+                "Ateliers interactifs",
+                "Conférences de haut niveau",
+                "Thème : digitalisation du secteur de la santé",
+                "Développement des compétences en Data Science et IA",
+                "Collaboration et innovation entre étudiants"
+              ],
+              "date": "2025-04-28",
+              "lieu": "ESI",
+              "lien": "http://www.esi.ac.ma/mdfds-2nd-edition-2025/"
+            },
+            {
+              "titre": "Participation de l’ESI au PMI® MENA Leadership Institute Meeting 2025",
+              "description": "L’ESI représentée au PMI® MENA Leadership Institute Meeting 2025, mettant en avant le leadership étudiant et la collaboration internationale.",
+              "programme": [
+                "Participation internationale",
+                "Représentation institutionnelle",
+                "Leadership étudiant",
+                "Collaboration avec le PMI Morocco Chapter"
+              ],
+              "date": "2025-10-08",
+              "lieu": "ESI",
+              "lien": "http://www.esi.ac.ma/esi-pmimena-leadership-institute-meeting-2025/"
+            }
+          ]
+        }
+      }
+    },
+    "faq": {
+      "title": "FAQ & Aide",
+      "icon": "❓",
+      "subsections": {
+        "questions-frequentes": {
+          "title": "Questions Fréquentes",
+          "content": [
+            {
+              "question": "Qu'est-ce que la plateforme ESI Together ?",
+              "reponse": "ESI Together est une plateforme conçue pour accompagner les nouveaux étudiants de l'École des Sciences de l'Information en centralisant toutes les informations essentielles : logement, transport, ressources académiques et vie étudiante.",
+              "categorie": "Général"
+            },
+            {
+              "question": "À qui s'adresse la plateforme ?",
+              "reponse": "Elle s'adresse principalement aux nouveaux étudiants intégrant l'ESI, mais reste utile pour tous les étudiants souhaitant accéder rapidement à des informations fiables et organisées.",
+              "categorie": "Général"
+            },
+            {
+              "question": "Quels types de logements sont proposés ?",
+              "reponse": "La plateforme référence plusieurs résidences étudiantes à Rabat, notamment Bayt Al Maârifa (BAM) et la Cité Universitaire Fondation Hassan II, avec leurs conditions d'accès et coordonnées.",
+              "categorie": "Logement"
+            },
+            {
+              "question": "Est-ce que la plateforme permet de réserver un logement ?",
+              "reponse": "Non. ESI Together ne réalise pas de réservations. Elle fournit uniquement les informations et contacts pour guider les étudiants dans leur démarche.",
+              "categorie": "Logement"
+            },
+            {
+              "question": "Quelles lignes de transport desservent l'ESI ?",
+              "reponse": "Les principaux moyens de transport sont : Bus ALSA (lignes L06 et L30), Tramway L1. Des indications sur les trajets, les arrêts proches et la durée moyenne du trajet sont également disponibles.",
+              "categorie": "Transport"
+            },
+            {
+              "question": "La plateforme fournit-elle des supports de cours ?",
+              "reponse": "Oui, une section 'Ressources académiques' regroupe cours, résumés, contrôles, examens et documents utiles mis à disposition par les étudiants ou enseignants.",
+              "categorie": "Ressources"
+            },
+            {
+              "question": "Que trouve-t-on dans la section Autoformation ?",
+              "reponse": "La section Autoformation (en cours de développement) proposera des supports complémentaires : tutoriels, vidéos éducatives, plateformes d'apprentissage et guides thématiques.",
+              "categorie": "Ressources"
+            },
+            {
+              "question": "La plateforme présente-t-elle les clubs de l'école ?",
+              "reponse": "Oui, la section 'Vie étudiante' contient les informations sur les clubs de l'ESI, notamment CODE ESI et JLM, ainsi que leurs activités et modalités d'adhésion.",
+              "categorie": "Vie Étudiante"
+            },
+            {
+              "question": "Peut-on contribuer à enrichir la plateforme ?",
+              "reponse": "Oui. Les étudiants peuvent proposer des ressources académiques, partager des informations utiles ou suggérer des améliorations via un formulaire de contact (ou un futur espace communautaire).",
+              "categorie": "Contribution"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
