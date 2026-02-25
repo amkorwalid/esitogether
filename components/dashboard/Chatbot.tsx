@@ -56,7 +56,7 @@ export default function Chatbot() {
   }
 
   return (
-    <div className="flex flex-col" style={{ minHeight: "60vh", maxHeight: "calc(100dvh - 200px)" }}>
+    <div className="flex flex-col">
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-white">🤖 Chatbot ESI</h2>
         <p className="text-sm mt-1" style={{ color: "#7FAFD4" }}>
@@ -65,7 +65,7 @@ export default function Chatbot() {
       </div>
 
       <div
-        className="flex-1 overflow-y-auto rounded-xl p-4 space-y-4 mb-4"
+        className="flex-1 max-h-[400px] overflow-y-scroll rounded-xl p-4 space-y-4 mb-4"
         style={{ background: "#0F2854", border: "1px solid #1C4D8D", minHeight: 0 }}
       >
         {messages.map((msg, i) => (
@@ -95,7 +95,7 @@ export default function Chatbot() {
               className="px-4 py-3 rounded-2xl rounded-bl-sm text-sm"
               style={{ background: "#122E63", border: "1px solid #1C4D8D", color: "#7FAFD4" }}
             >
-              <span className="animate-pulse">En train de répondre…</span>
+              <span className="animate-pulse">En train de réfléchir…</span>
             </div>
           </div>
         )}

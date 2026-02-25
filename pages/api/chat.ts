@@ -63,7 +63,7 @@ export default async function handler(
     const systemMessage: ChatMessage = {
       role: "system",
       content:
-        "You are a helpful assistant for ESITogether platform answering questions about the intern regulations of an engineering school named ESI. You always answer in French. If you don't know the answer based on the provided context, say so politely.",
+        "You are a helpful assistant for ESITogether platform answering questions about the knowledge base. You always answer in French. If you don't know the answer based on the provided context, say so politely.",
     };
 
     const messagesPayload: ChatMessage[] = [

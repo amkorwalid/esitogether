@@ -78,7 +78,7 @@ export default function Dashboard() {
           isOpen={sidebarOpen}
           onClose={() => setSidebarOpen(false)}
         />
-        <main className="flex-1 overflow-y-auto p-4 md:p-8">
+        <main className="flex-1 h-screen overflow-y-scroll p-4 pt- md:p-8">
           {/* Mobile section title */}
           <p className="md:hidden text-xs mb-4" style={{ color: "#7FAFD4" }}>
             {sectionLabels[activeSection]}
