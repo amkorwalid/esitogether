@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 
 type Message = { role: "user" | "assistant"; content: string };
 
@@ -7,7 +8,7 @@ export default function Chatbot() {
     {
       role: "assistant",
       content:
-        "Bonjour ! Je suis l'assistant ESI Together. Je peux répondre à vos questions sur le règlement intérieur de l'ESI. Comment puis-je vous aider ?",
+        "Bonjour ! Je suis l'assistant ESI Together. Comment puis-je vous aider ?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -23,7 +24,9 @@ export default function Chatbot() {
     if (!text || loading) return;
 
     const userMsg: Message = { role: "user", content: text };
-    const history = messages.filter((m) => m.role !== "assistant" || messages.indexOf(m) !== 0);
+    const history = messages.filter(
+      (m) => m.role !== "assistant" || messages.indexOf(m) !== 0
+    );
 
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
@@ -44,7 +47,10 @@ export default function Chatbot() {
     } catch {
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: "Erreur de connexion. Veuillez réessayer." },
+        {
+          role: "assistant",
+          content: "Erreur de connexion. Veuillez réessayer.",
+        },
       ]);
     } finally {
       setLoading(false);
@@ -56,28 +62,40 @@ export default function Chatbot() {
   }
 
   return (
-    <div className="flex flex-col">
-      <div className="mb-6">
+    <div
+      className="flex flex-col"
+      style={{ height: "calc(100vh - 120px)", minHeight: 0 }}
+    >
+      {/* Header */}
+      <div className="mb-4 shrink-0">
         <h2 className="text-2xl font-bold text-white">🤖 Chatbot ESI</h2>
         <p className="text-sm mt-1" style={{ color: "#7FAFD4" }}>
           Posez vos questions sur le règlement intérieur de l&apos;ESI
         </p>
       </div>
 
+      {/* Scrollable messages area */}
       <div
-        className="flex-1 max-h-[400px] overflow-y-scroll rounded-xl p-4 space-y-4 mb-4"
-        style={{ background: "#0F2854", border: "1px solid #1C4D8D", minHeight: 0 }}
+        className="flex-1 overflow-y-auto rounded-xl p-4 space-y-4"
+        style={{
+          background: "#0F2854",
+          border: "1px solid #1C4D8D",
+          minHeight: 0,
+        }}
       >
         {messages.map((msg, i) => (
           <div
             key={i}
-            className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+            className={`flex ${
+              msg.role === "user" ? "justify-end" : "justify-start"
+            }`}
           >
+            
             <div
               className={`max-w-[75%] px-4 py-3 rounded-2xl text-sm leading-relaxed ${
                 msg.role === "user"
-                  ? "text-white rounded-br-sm"
-                  : "text-white rounded-bl-sm"
+                  ? "text-white rounded-tr-sm"
+                  : "text-white rounded-tl-sm"
               }`}
               style={
                 msg.role === "user"
@@ -85,31 +103,55 @@ export default function Chatbot() {
                   : { background: "#122E63", border: "1px solid #1C4D8D" }
               }
             >
-              {msg.content}
+              {msg.role === "assistant" ? (
+                <div className="prose prose-invert prose-sm max-w-none markdown-body">
+                  <ReactMarkdown>{msg.content}</ReactMarkdown>
+                </div>
+              ) : (
+                msg.content
+              )}
             </div>
           </div>
         ))}
+
         {loading && (
-          <div className="flex justify-start">
+          <div className="flex flex-col justify-start items-center gap-2">
             <div
-              className="px-4 py-3 rounded-2xl rounded-bl-sm text-sm"
-              style={{ background: "#122E63", border: "1px solid #1C4D8D", color: "#7FAFD4" }}
+              className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs"
+              style={{ background: "#1C4D8D" }}
+            >
+              🤖
+            </div>
+            <div
+              className="px-4 py-3 rounded-2xl rounded-tl-sm text-sm"
+              style={{
+                background: "#122E63",
+                border: "1px solid #1C4D8D",
+                color: "#7FAFD4",
+              }}
             >
               <span className="animate-pulse">En train de réfléchir…</span>
             </div>
           </div>
         )}
+
         <div ref={bottomRef} />
       </div>
 
-      <div className="flex gap-3">
+      {/* Fixed input bar at the bottom */}
+      <div
+        className="shrink-0 flex gap-3 pt-3 pb-1"
+        style={{
+          background: "transparent",
+        }}
+      >
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Posez votre question…"
-          className="flex-1 px-4 py-3 rounded-xl text-sm text-white placeholder-blue-300 outline-none focus:ring-2"
+          className="flex-1 px-4 py-3 rounded-xl text-sm text-white placeholder-blue-300 outline-none focus:ring-2 focus:ring-blue-500"
           style={{
             background: "#122E63",
             border: "1px solid #1C4D8D",
@@ -121,8 +163,12 @@ export default function Chatbot() {
           disabled={loading || !input.trim()}
           className="px-5 py-3 rounded-xl text-sm font-semibold text-white transition-colors disabled:opacity-50"
           style={{ background: "#1C4D8D" }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = "#4988C4")}
-          onMouseLeave={(e) => (e.currentTarget.style.background = "#1C4D8D")}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.background = "#4988C4")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.background = "#1C4D8D")
+          }
         >
           Envoyer
         </button>
