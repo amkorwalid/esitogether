@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { UserButton, useUser } from '@clerk/nextjs';
 
 const sections = [
   { icon: "🏠", title: "Logement & Résidences", desc: "Résidences universitaires, cités étudiantes et informations sur le logement à Rabat." },
@@ -163,7 +164,7 @@ const stats = [
 
 /* ════════════════════════════════════════════ */
 export default function Home() {
-  /* track mouse for hero spotlight */
+  const { user, isLoaded } = useUser();
   const [mouse, setMouse] = useState({ x: 0.5, y: 0.5 });
 
   return (
@@ -226,8 +227,9 @@ export default function Home() {
           </motion.div>
 
           <motion.div whileHover={{ scale: 1.06 }} whileTap={{ scale: 0.96 }}>
+            
             <Link
-              href="/dashboard"
+              href={user ? "/dashboard" : "/sign-in"}
               className="px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors relative overflow-hidden"
               style={{ background: "#1C4D8D" }}
             >
@@ -311,7 +313,7 @@ export default function Home() {
           >
             <motion.div whileHover={{ scale: 1.06, boxShadow: "0 0 30px rgba(73,136,196,0.5)" }} whileTap={{ scale: 0.97 }} className="rounded-xl">
               <Link
-                href="/dashboard"
+                href={user ? "/dashboard" : "/sign-in"}
                 className="block px-8 py-3.5 rounded-xl text-base font-bold text-white transition-colors"
                 style={{ background: "#1C4D8D" }}
               >
@@ -320,7 +322,7 @@ export default function Home() {
             </motion.div>
             <motion.div whileHover={{ scale: 1.06 }} whileTap={{ scale: 0.97 }} className="rounded-xl">
               <Link
-                href="/dashboard"
+                href={user ? "/dashboard" : "/sign-in"}
                 className="block px-8 py-3.5 rounded-xl text-base font-medium transition-colors"
                 style={{ background: "#122E63", border: "1px solid #4988C4", color: "#BDE8F5" }}
               >
@@ -388,7 +390,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {sections.map((s, i) => (
-              <Link key={s.title} href="/dashboard" className="block">
+              <Link key={s.title} href={user ? "/dashboard" : "/sign-in"} className="block">
                 <TiltCard s={s} index={i} />
               </Link>
             ))}

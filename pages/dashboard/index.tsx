@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Head from "next/head";
 import type { GetServerSideProps } from "next";
+import { useUser } from '@clerk/nextjs'
+import { useRouter } from 'next/navigation'
 import Sidebar, { Section } from "../../components/Sidebar";
 import Chatbot from "../../components/dashboard/Chatbot";
 import Logement from "../../components/dashboard/Logement";
@@ -19,12 +21,20 @@ const sectionLabels: Record<Section, string> = {
 };
 
 export default function Dashboard() {
+  const { user, isLoaded } = useUser()
+  const router = useRouter()
+
   const [activeSection, setActiveSection] = useState<Section>("chatbot");
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   function handleSelect(section: Section) {
     setActiveSection(section);
     setSidebarOpen(false);
+  }
+
+  if (!user && isLoaded) {
+    router.push('/sign-in')
+    return null
   }
 
   const renderSection = () => {

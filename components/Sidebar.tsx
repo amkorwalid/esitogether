@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { UserButton, useUser } from '@clerk/nextjs'
 
 export type Section =
   | "chatbot"
@@ -25,6 +26,7 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ active, onSelect, isOpen, onClose }: SidebarProps) {
+  const { user } = useUser()
   return (
     <>
       {/* Backdrop overlay — mobile only */}
@@ -40,7 +42,7 @@ export default function Sidebar({ active, onSelect, isOpen, onClose }: SidebarPr
         className={`
           fixed inset-y-0 left-0 z-40 w-64 flex flex-col
           transition-transform duration-300 ease-in-out
-          md:static md:z-auto md:translate-x-0 md:min-h-screen
+          md:static md:z-auto md:translate-x-0 md:min-h-screen border-r border-blue-900
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
         `}
         style={{ background: "#0F2854" }}
@@ -82,8 +84,11 @@ export default function Sidebar({ active, onSelect, isOpen, onClose }: SidebarPr
           ))}
         </nav>
 
-        <div className="px-6 py-4 border-t border-blue-700">
-          <p className="text-xs" style={{ color: "#7FAFD4" }}>© 2025 ESI Together</p>
+        <div className="px-6 py-4 border-t flex items-center border-blue-700">
+          <UserButton afterSignOutUrl="/" />
+          <span className="block ml-2 text-md text-blue-300">
+            <strong>{user?.firstName || user?.username}</strong>
+          </span>
         </div>
       </aside>
     </>
