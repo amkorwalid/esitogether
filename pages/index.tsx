@@ -170,7 +170,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ESI Together – Base de connaissances</title>
+        <title>ESI Together – Knowledge Base</title>
         <meta name="description" content="La base de connaissances des étudiants de l'ESI Rabat" />
       </Head>
 
